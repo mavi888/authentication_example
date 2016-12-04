@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lock
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func loginClicked(_ sender: Any) {
+        let controller = A0Lock.shared().newLockViewController()
+        
+        controller?.closable = true
+        controller?.onAuthenticationBlock = {(profile, token) in
+            // Do something with token & profile. e.g.: save them.
+            // Lock will not save the Token and the profile for you.
+            // And dismiss the UIViewController.
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        A0Lock.shared().present(controller, from: self)
+    }
 }
 

@@ -1,0 +1,7 @@
+
+authentication_example/Auth0.plist
+
+authentication_example/Info.plist
+
+Pods/
+Podfile.lock
