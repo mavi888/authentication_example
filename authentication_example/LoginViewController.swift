@@ -8,6 +8,7 @@
 
 import UIKit
 import Lock
+import SimpleKeychain
 
 class LoginViewController: UIViewController {
 
@@ -30,6 +31,13 @@ class LoginViewController: UIViewController {
                 self.showMissingProfileAlert()
                 return
             }
+            
+            guard let userToken = token else {
+                return
+            }
+            
+            let keychain = A0SimpleKeychain(service: "Auth0")
+            keychain.setString(userToken.idToken, forKey: "id_token")
             
             self.retrievedProfile = userProfile
             controller?.dismiss(animated: true, completion: nil)

@@ -8,5 +8,5 @@ target 'authentication_example' do
 use_frameworks!
 pod 'Lock', '~> 1.26'
 pod 'Auth0', '~> 1.0'
-
+pod 'SimpleKeychain', '~> 0.7'
 end
