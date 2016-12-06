@@ -12,9 +12,25 @@ import SimpleKeychain
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var tokenLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        guard A0SimpleKeychain().string(forKey: "id_token") != nil else {
+            print("TOKEN is not here")
+            return
+        }
+        
+        guard A0SimpleKeychain().data(forKey: "user_profile") != nil else {
+            print("PROFILE is not here")
+            return
+        }
+    
+        self.tokenLabel.text = "TOKEN AND PROFILE ARE HERE"
+        self.showProfileViewController();
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,24 +52,18 @@ class LoginViewController: UIViewController {
                 return
             }
             
-            let keychain = A0SimpleKeychain(service: "Auth0")
-            keychain.setString(userToken.idToken, forKey: "id_token")
-            
+            A0SimpleKeychain().setString(userToken.idToken, forKey: "id_token")
+            let profileData = NSKeyedArchiver.archivedData(withRootObject: userProfile)
+            A0SimpleKeychain().setData(profileData, forKey: "user_profile")
+
             self.retrievedProfile = userProfile
             controller?.dismiss(animated: true, completion: nil)
-            self.performSegue(withIdentifier: "ShowProfile", sender: nil)
+            
+            self.showProfileViewController();
         }
         
         A0Lock.shared().present(controller, from: self)
-    }
-    
-    // MARK: - Segue
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let profileController = segue.destination as? ProfileViewController else {
-            return
-        }
-        profileController.profile = self.retrievedProfile
+        
     }
     
     // MARK: - Private
@@ -64,6 +74,13 @@ class LoginViewController: UIViewController {
         let alert = UIAlertController(title: "Error", message: "Could not retrieve profile", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    fileprivate func showProfileViewController() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let profileViewController = storyBoard.instantiateViewController(withIdentifier:"ProfileViewController") as! ProfileViewController
+        profileViewController.profile = self.retrievedProfile
+        self.present(profileViewController, animated: true, completion: nil)
     }
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import Lock
+import SimpleKeychain
 
 class ProfileViewController: UIViewController {
 
@@ -18,6 +19,11 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (self.profile == nil) {
+            let data = A0SimpleKeychain().data(forKey: "user_profile")
+            profile = NSKeyedUnarchiver.unarchiveObject(with: data!) as! A0UserProfile!
+        }
+        
         self.welcomeLabel.text = "Welcome, \(self.profile.name)"
         URLSession.shared.dataTask(with: self.profile.picture, completionHandler: { data, response, error in
             DispatchQueue.main.async {
