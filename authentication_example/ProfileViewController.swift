@@ -32,4 +32,20 @@ class ProfileViewController: UIViewController {
             }
         }).resume()
     }
+    
+    @IBAction func logoutClicked(_ sender: Any) {
+        A0SimpleKeychain().deleteEntry(forKey: "id_token")
+        A0SimpleKeychain().deleteEntry(forKey: "user_profile")
+        
+        self.showLoginViewController();
+    }
+    
+    // MARK: - Private
+    
+    fileprivate func showLoginViewController() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = storyBoard.instantiateViewController(withIdentifier:"LoginViewController") as! LoginViewController
+        self.present(loginViewController, animated: true, completion: nil)
+    }
+    
 }

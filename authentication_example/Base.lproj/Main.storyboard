@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LogInViewController-->
+        <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LogInViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="authentication_example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="authentication_example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,7 +34,7 @@
                                     <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALc-Mh-yaN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-gS-fVA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-gS-fVA">
                                 <rect key="frame" x="30" y="595" width="347" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -84,6 +85,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLh-ub-uaF">
+                                <rect key="frame" x="284" y="20" width="110" height="28"/>
+                                <color key="backgroundColor" red="0.74860228976252641" green="1" blue="0.95301298799142875" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="rpn-dw-UyR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutClicked:" destination="l0b-gr-Jmv" eventType="touchUpInside" id="2gj-7Q-1YW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -91,6 +106,8 @@
                             <constraint firstItem="ZFi-il-ZrJ" firstAttribute="centerY" secondItem="KDR-5p-nGe" secondAttribute="centerY" id="Spj-aP-zq4"/>
                             <constraint firstItem="dsT-ox-Kww" firstAttribute="centerX" secondItem="KDR-5p-nGe" secondAttribute="centerX" id="TIw-3O-u09"/>
                             <constraint firstItem="dsT-ox-Kww" firstAttribute="top" secondItem="ZFi-il-ZrJ" secondAttribute="bottom" constant="34" id="e0y-Od-VA6"/>
+                            <constraint firstItem="SLh-ub-uaF" firstAttribute="top" secondItem="YKP-34-KJ2" secondAttribute="bottom" id="nK3-dx-9GZ"/>
+                            <constraint firstItem="SLh-ub-uaF" firstAttribute="trailing" secondItem="KDR-5p-nGe" secondAttribute="trailingMargin" id="pue-HL-sW0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -100,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAM-ir-ztU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="124"/>
+            <point key="canvasLocation" x="960.86956521739137" y="123.91304347826087"/>
         </scene>
     </scenes>
 </document>
