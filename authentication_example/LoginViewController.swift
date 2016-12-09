@@ -19,10 +19,11 @@ class LoginViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        guard A0SimpleKeychain().string(forKey: "id_token") != nil else {
+        guard let token = A0SimpleKeychain().string(forKey: "id_token") else {
             print("TOKEN is not here")
             return
         }
+        print("token: " + token);
         
         guard A0SimpleKeychain().data(forKey: "user_profile") != nil else {
             print("PROFILE is not here")
@@ -30,7 +31,7 @@ class LoginViewController: UIViewController {
         }
     
         self.tokenLabel.text = "TOKEN AND PROFILE ARE HERE"
-        self.showProfileViewController();
+        self.showActionViewController();
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,5 +83,12 @@ class LoginViewController: UIViewController {
         profileViewController.profile = self.retrievedProfile
         self.present(profileViewController, animated: true, completion: nil)
     }
+    
+    fileprivate func showActionViewController() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let actionViewController = storyBoard.instantiateViewController(withIdentifier:"ActionViewController") as! ActionViewController
+        self.present(actionViewController, animated: true, completion: nil)
+    }
+
 }
 

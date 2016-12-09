@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3390FE371DF47D6800B394B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390FE361DF47D6800B394B6 /* ProfileViewController.swift */; };
+		33A4DB091DFB0F5400AEA2B4 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4DB081DFB0F5300AEA2B4 /* ActionViewController.swift */; };
 		33EBEF081DF46BD400EFF443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EBEF071DF46BD400EFF443 /* AppDelegate.swift */; };
 		33EBEF0A1DF46BD400EFF443 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EBEF091DF46BD400EFF443 /* LoginViewController.swift */; };
 		33EBEF0D1DF46BD400EFF443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33EBEF0B1DF46BD400EFF443 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		2DB16FA47F4DE8DA2A604E13 /* Pods-authentication_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-authentication_example.release.xcconfig"; path = "Pods/Target Support Files/Pods-authentication_example/Pods-authentication_example.release.xcconfig"; sourceTree = "<group>"; };
 		3390FE361DF47D6800B394B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		33A4DB081DFB0F5300AEA2B4 /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		33EBEF041DF46BD400EFF443 /* authentication_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = authentication_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33EBEF071DF46BD400EFF443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33EBEF091DF46BD400EFF443 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				33EBEF071DF46BD400EFF443 /* AppDelegate.swift */,
 				33EBEF091DF46BD400EFF443 /* LoginViewController.swift */,
 				33EBEF0B1DF46BD400EFF443 /* Main.storyboard */,
+				33A4DB081DFB0F5300AEA2B4 /* ActionViewController.swift */,
 				3390FE361DF47D6800B394B6 /* ProfileViewController.swift */,
 				33EBEF0E1DF46BD400EFF443 /* Assets.xcassets */,
 				33EBEF101DF46BD400EFF443 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			files = (
 				3390FE371DF47D6800B394B6 /* ProfileViewController.swift in Sources */,
 				33EBEF0A1DF46BD400EFF443 /* LoginViewController.swift in Sources */,
+				33A4DB091DFB0F5400AEA2B4 /* ActionViewController.swift in Sources */,
 				33EBEF081DF46BD400EFF443 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

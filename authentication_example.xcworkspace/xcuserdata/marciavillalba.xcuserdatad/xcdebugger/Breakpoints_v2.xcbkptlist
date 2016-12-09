@@ -17,38 +17,6 @@
             endingLineNumber = "25"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "authentication_example.ProfileViewController.(viewDidLoad () -&gt; ()).(closure #1).(closure #1)"
-                  moduleName = "authentication_example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marciavillalba/Documents/projects/authentication_example/authentication_example/ProfileViewController.swift"
-                  timestampString = "502746995.077679"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "authentication_example.ProfileViewController.(viewDidLoad () -&gt; ()).(closure #1).(closure #1)"
-                  moduleName = "authentication_example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marciavillalba/Documents/projects/authentication_example/authentication_example/ProfileViewController.swift"
-                  timestampString = "502746995.08159"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "73">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -65,102 +33,70 @@
             endingLineNumber = "23"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "authentication_example/ActionViewController.swift"
+            timestampString = "502994488.034325"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "callActionRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "authentication_example/ActionViewController.swift"
+            timestampString = "502994415.383167"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "callActionRequest()"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "authentication_example.ProfileViewController.viewDidLoad () -&gt; ()"
+                  symbolName = "authentication_example.ActionViewController.(callActionRequest in _C4B964019C159DE53DCDCEA863CF0BAE) () -&gt; ()"
                   moduleName = "authentication_example"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marciavillalba/Documents/projects/authentication_example/authentication_example/ProfileViewController.swift"
-                  timestampString = "502746995.092995"
+                  urlString = "file:///Users/marciavillalba/Documents/projects/authentication_example/authentication_example/ActionViewController.swift"
+                  timestampString = "502994415.990584"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "938">
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1200">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "authentication_example.ProfileViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  symbolName = "authentication_example.ActionViewController.((callActionRequest in _C4B964019C159DE53DCDCEA863CF0BAE) () -&gt; ()).(closure #1)"
                   moduleName = "authentication_example"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marciavillalba/Documents/projects/authentication_example/authentication_example/ProfileViewController.swift"
-                  timestampString = "502746995.096607"
+                  urlString = "file:///Users/marciavillalba/Documents/projects/authentication_example/authentication_example/ActionViewController.swift"
+                  timestampString = "502994415.99375"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "27">
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "988">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "authentication_example/LoginViewController.swift"
-            timestampString = "502746580.806293"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "authentication_example/LoginViewController.swift"
-            timestampString = "502746628.448613"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "authentication_example/LoginViewController.swift"
-            timestampString = "502746629.708774"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "authentication_example/LoginViewController.swift"
-            timestampString = "502746651.936483"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "loginClicked(_:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
